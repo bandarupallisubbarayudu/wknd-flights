@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/wknd-flights/clientlibs"/>
+    <filter root="/apps/wknd-flights/components"/>
+    <filter root="/apps/wknd-flights/i18n"/>
+</workspaceFilter>

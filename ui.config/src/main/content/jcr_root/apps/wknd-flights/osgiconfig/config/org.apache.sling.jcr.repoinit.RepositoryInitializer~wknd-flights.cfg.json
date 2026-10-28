@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/wknd-flights",
+        "create path (nt:unstructured) /content/dam/wknd-flights/jcr:content",
+        "set properties on /content/dam/wknd-flights/jcr:content\n  set cq:conf{String} to /conf/wknd-flights\n  set jcr:title{String} to \"WKND Flights\"\nend"
+    ]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/wknd-flights" mode="merge"/>
+    <filter root="/content/wknd-flights" mode="merge"/>
+    <filter root="/content/dam/wknd-flights" mode="merge">
+        <exclude pattern="/content/dam/wknd-flights(/.*)?"/>
+        <include pattern="/content/dam/wknd-flights/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/wknd-flights/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/wknd-flights" mode="merge"/>
+</workspaceFilter>
