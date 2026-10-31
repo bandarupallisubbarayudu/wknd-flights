@@ -1,0 +1,45 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-use.hero="com.adobe.aem.wknd.flights.core.models.HeroModel" />
+
+<div class="cmp-hero" data-sly-test="${hero.title}">
+    <div class="cmp-hero__section">
+        <div class="cmp-hero__heading-container">
+            <h1 class="cmp-hero__title">${hero.title}</h1>
+        </div>
+        <div class="cmp-hero__image-and-content">
+            <!-- Hero Image -->
+            <div class="cmp-hero__image-container" data-sly-test="${hero.image}">
+                <img
+                    class="cmp-hero__image"
+                    src="${hero.image}"
+                    alt="${hero.altText}"
+                    width="921"
+                    height="235"
+                    loading="eager"
+                />
+            </div>
+            <div class="cmp-hero__content-container">
+                <div class="cmp-hero__intro" data-sly-test="${hero.introText}">
+                    <p class="cmp-hero__intro-text">${hero.introText}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cmp-hero__nav-container" data-sly-test="${hero.navLinks}">
+        <nav class="cmp-hero__nav" aria-labelledby="cmp-hero__nav-heading">
+            <!-- Navigation Heading -->
+            <div class="cmp-hero__nav-heading-container">
+                <h2 class="cmp-hero__nav-heading" id="cmp-hero__nav-heading">On this page</h2>
+            </div>
+            <div class="cmp-hero__nav-links-wrapper">
+                <ul class="cmp-hero__nav-list" data-sly-list.navLink="${hero.navLinks}">
+                    <li class="cmp-hero__nav-item">
+                        <a class="cmp-hero__nav-link" href="#${navLink.linkId}"> ${navLink.linkText} </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div data-sly-test="${!hero.title}" data-emptytext="Hero Component" class="cq-placeholder"></div>
