@@ -304,6 +304,13 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_1793452566591
+                        jcr:primaryType="nt:unstructured" jcr:title="WKND Flights"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/apps/wknd-flights/components/content/hero,/apps/wknd-flights/components/content/teaser,/apps/wknd-flights/components/text,/apps/wknd-flights/components/title]"
+                        layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1793452566591>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -335,11 +342,37 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Generic Page"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    clientlibs="[wknd-flights.dependencies,wknd-flights.site]"
+                    clientlibs="[wknd-flights.dependencies,wknd-flights.site,wknd-flights.base]"
                     clientlibsJsHead="wknd-flights.dependencies">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <content jcr:primaryType="nt:unstructured">
+                <teaser jcr:primaryType="nt:unstructured">
+                    <policy_1793416878761 jcr:lastModified="{Date}2026-10-31T11:47:32.637+05:30" jcr:lastModifiedBy="admin" jcr:primaryType="nt:unstructured" jcr:title="Teaser Component Policy" sling:resourceType="wcm/core/components/policy/policy" allowedTypes="h2" headingLevel="h2" linkDisabled="false">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 cq:styleGroupLabel="Image Position" jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0 cq:styleClasses="cmp-teaser--image-left" cq:styleId="1793416929207" cq:styleLabel="Image Left" jcr:primaryType="nt:unstructured"/>
+                                    <item1 cq:styleClasses="cmp-teaser--image-right" cq:styleId="1793416946018" cq:styleLabel="Image Right" jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1793416878761>
+                </teaser>
+                <hero jcr:primaryType="nt:unstructured">
+                    <policy_1793417148122
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Hero Component Policy"
+                            sling:resourceType="wcm/core/components/policy/policy"
+                            allowedTypes="[h1,h2,h3,h4,h5,h6]"
+                            linkDisabled="false">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1793417148122>
+                </hero>
+            </content>
         </components>
     </wknd-flights>
     <wcm jcr:primaryType="nt:unstructured">
