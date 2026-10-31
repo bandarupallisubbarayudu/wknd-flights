@@ -1,0 +1,29 @@
+coral-multifield.links-multifield
+coral-multifield-item-content > div {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 15px !important;
+    align-items: flex-start;
+}
+
+coral-multifield.links-multifield
+coral-multifield-item-content > div > .coral-Form-fieldwrapper {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+}
+
+coral-multifield.links-multifield
+.coral-Form-field {
+    width: 100% !important;
+}
+
+coral-multifield.links-multifield coral-multifield-item {
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+coral-multifield.links-multifield coral-multifield-item:last-of-type {
+    border-bottom: none;
+}
