@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content
+        dam:noThumbnail="{Boolean}true"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="site"
+        sourcing="false">
+        <folderThumbnail/>
+    </jcr:content>
+    <a330-economy-cabin-mother-child-food-headphones.jpg/>
+    <b737-economy-child-watching-ife.jpg/>
+    <joey-club-with-logo.jpg/>
+    <mother-child-onboard-sitting-in-seat.jpg/>
+    <qf-b787-onboard-economy-snack-child.jpg/>
+    <a321xlr-onboard-economy-girl-crew-children-kit.jpg/>
+</jcr:root>

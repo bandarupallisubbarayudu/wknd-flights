@@ -6,6 +6,7 @@
         <exclude pattern="/content/dam/wknd-flights(/.*)?"/>
         <include pattern="/content/dam/wknd-flights/jcr:content(/.*)?"/>
     </filter>
+    <filter root="/content/dam/wknd-flights/site" mode="merge" />
     <filter root="/content/dam/wknd-flights/asset.jpg" mode="merge"/>
     <filter root="/content/experience-fragments/wknd-flights" mode="merge"/>
 </workspaceFilter>
