@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/wknd-flights/settings/wcm/templates/wknd-flights"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Example"
+        sling:resourceType="wknd-flights/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wknd-flights/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wknd-flights/components/container"
+                layout="responsiveGrid">
+                <hero
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd-flights/components/content/hero"
+                    altText="Female cabin crew member smiling and interacting with a young girl"
+                    image="/content/dam/wknd-flights/site/a321xlr-onboard-economy-girl-crew-children-kit.jpg"
+                    introText="We love having young flyers on board. Whether they're flying with you or travelling alone, here's all you need to know – from booking a flight to the onboard experience."
+                    title="Flying with infants and children">
+                    <navLinks jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            linkId="joey-club"
+                            linkText="Joey Club"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            linkId="entertainment"
+                            linkText="Inflight entertainment for kids"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            linkId="childrens-meals"
+                            linkText="Infant and children’s meals"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            linkId="alone"
+                            linkText="Children travelling alone"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            linkId="support-children"
+                            linkText="Support for children with disability and additional needs"/>
+                    </navLinks>
+                </hero>
+                <teaser_604195375
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd-flights/components/content/teaser"
+                    altText="Animated image of Joey Club animal characters"
+                    anchorId="joey-club"
+                    description="&lt;p>Meet our Joey Club family, aiming to make flying fun for our little travellers. Together with our inflight kids' kits, Joey Club zones in select lounges and activities they'll be ready to embrace the magic of travel.&lt;/p>&#xd;&#xa;"
+                    image="/content/dam/wknd-flights/site/joey-club-with-logo.jpg"
+                    introText="Join our club designed just for kids."
+                    openInNewTab="true"
+                    showBackToTop="true"
+                    textIsRich="true"
+                    title="Joey Club">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            linkText="Find out about the Joey Club"
+                            linkURL="#"/>
+                    </links>
+                </teaser_604195375>
+                <teaser
+                    cq:styleIds="[1793416946018]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd-flights/components/content/teaser"
+                    altText="Mother and Daughter sitting in economy seat flying onboard a Boeing B737-800. Watching inflight entertainment."
+                    anchorId="entertainment"
+                    description="&lt;p>With dedicated kid’s movies, TV and radio channels, games and audiobooks on select flights there’s plenty to keep the little ones entertained.&lt;/p>&#xd;&#xa;"
+                    image="/content/dam/wknd-flights/site/b737-economy-child-watching-ife.jpg"
+                    openInNewTab="true"
+                    showBackToTop="true"
+                    textIsRich="true"
+                    title="Inflight entertainment for kids">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            linkText="Explore inflight entertainment"
+                            linkURL="#"/>
+                    </links>
+                </teaser>
+                <teaser_1570050537
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd-flights/components/content/teaser"
+                    altText="A330 mother and child dining in economy"
+                    anchorId="childrens-meals"
+                    description="&lt;p>You can request a baby or child meal after making your booking on selected flights. Please request their meal at least 24 hours before your flight.&lt;/p>&#xd;&#xa;"
+                    image="/content/dam/wknd-flights/site/a330-economy-cabin-mother-child-food-headphones.jpg"
+                    openInNewTab="true"
+                    showBackToTop="true"
+                    textIsRich="true"
+                    title="Infant and children’s meals">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            linkText="More about meals for infants and children"
+                            linkURL="#"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            linkText="Request an infant or child meal"
+                            linkURL="#"/>
+                    </links>
+                </teaser_1570050537>
+                <teaser_2005144582
+                    cq:styleIds="[1793416946018]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd-flights/components/content/teaser"
+                    altText="Crew welcoming young passenger onboard"
+                    anchorId="alone"
+                    description="&lt;p>We’ll be there to look after young flyers travelling alone. Find out how to book, check in, and everything else you’ll need to know about unaccompanied minors and children travelling alone. We’ll make sure they arrive safely to meet their nominated pick-up person at their destination.&lt;/p>&#xd;&#xa;"
+                    image="/content/dam/wknd-flights/site/qf-b787-onboard-economy-snack-child.jpg"
+                    openInNewTab="true"
+                    showBackToTop="true"
+                    textIsRich="true"
+                    title="Children travelling alone">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            linkText="More about children travelling alone"
+                            linkURL="#"/>
+                    </links>
+                </teaser_2005144582>
+                <teaser_441455177
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd-flights/components/content/teaser"
+                    altText="Mother and child walking in the terminal"
+                    anchorId="support-children"
+                    description="&lt;p>We're here to help make your child's journey easier and more comfortable. We support children travelling with disability and additional support needs, including:&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>autistic children,&lt;/li>&#xd;&#xa;&lt;li>children who are blind or have low vision,&lt;/li>&#xd;&#xa;&lt;li>children who are Deaf or have hearing loss,&lt;/li>&#xd;&#xa;&lt;li>children with reduced mobility, and&lt;/li>&#xd;&#xa;&lt;li>children with hidden disability.&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;p>If your child may benefit from extra support, let us know before you travel by completing our &lt;a href=&quot;https://www.qantas.com/en-au/travel-information/specific-needs-assistance/accessibility-medical-inclusion-requests&quot;>accessibility, medical and inclusion service request form&lt;/a>.&lt;/p>&#xd;&#xa;&lt;p>Flying can involve new new environments and routines that may feel challenging for some children. For tips on preparing your child for air travel, including managing sensory needs and changes to routine, see &lt;a href=&quot;https://www.aspect.org.au/about-autism/information-sheets/individuals-and-families-info-sheets#:~:text=Preparing%20your%20Autistic%20child%20for%20air%20travel&quot;>Aspect Australia's guide&lt;/a> to travelling with autistic children.&lt;/p>&#xd;&#xa;&lt;p>We’ve also partnered with Hidden Disabilities Sunflower to help children who may need additional support during their journey. Learn more about the &lt;a href=&quot;https://www.qantas.com/en-au/travel-information/specific-needs-assistance/hidden-disability#sunflower&quot;>Sunflower program and airport assistance&lt;/a>.&lt;/p>&#xd;&#xa;"
+                    image="/content/dam/wknd-flights/site/mother-child-onboard-sitting-in-seat.jpg"
+                    openInNewTab="true"
+                    showBackToTop="true"
+                    textIsRich="true"
+                    title="Support for children with disability and additional needs"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
