@@ -1,0 +1,74 @@
+<sly data-sly-use.accordion="com.adobe.cq.wcm.core.components.models.Accordion"
+    data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html"
+    data-sly-set.headingTag="${accordion.headingElement || 'h3'}"
+    data-sly-set.expandLabel="${properties.expandAllLabel || 'Expand all items'}"
+    data-sly-set.collapseLabel="${properties.collapseAllLabel || 'Collapse all items'}"
+/>
+<sly data-sly-call="${clientlib.css @ categories='wknd-flights.accordion'}" />
+
+<div class="cmp-accordion-section ${wcmmode.edit ? 'cmp-accordion-section--edit' : ''}" data-cmp-hook-accordion-section data-sly-test="${properties.sectionHeading}">
+    <div class="cmp-accordion-section__container">
+        <div class="cmp-accordion-section__intro">
+            <h2 class="cmp-accordion-section__heading" data-sly-test="${properties.sectionHeading}">
+                ${properties.sectionHeading}
+            </h2>
+            <p class="cmp-accordion-section__description" data-sly-test="${properties.sectionDescription}">
+                ${properties.sectionDescription}
+            </p>
+        </div>
+        <div class="cmp-accordion-section__main">
+            <button
+                type="button"
+                class="cmp-accordion__toggle-all"
+                data-sly-test="${accordion.items.size > 1}"
+                data-cmp-hook-accordion-all
+                data-expand-label="${expandLabel}"
+                data-collapse-label="${collapseLabel}"
+                aria-expanded="false"
+            >
+                ${expandLabel}
+            </button>
+            <div
+                id="${accordion.id}"
+                class="cmp-accordion"
+                data-cmp-is="accordion"
+                data-panelcontainer="${wcmmode.edit && 'accordion'}"
+                data-cmp-single-expansion="${accordion.singleExpansion}"
+                data-placeholder-text="${wcmmode.edit && 'Add accordion items'}"
+            >
+                <div
+                    data-sly-repeat.item="${accordion.items}"
+                    class="cmp-accordion__item"
+                    data-cmp-hook-accordion="item"
+                    id="${item.id}"
+                >
+                    <h3 data-sly-element="${headingTag}" class="cmp-accordion__header">
+                        <button
+                            id="${item.id}-button"
+                            class="cmp-accordion__button"
+                            type="button"
+                            aria-controls="${item.id}-panel"
+                            aria-expanded="false"
+                            data-cmp-hook-accordion="button"
+                        >
+                            <span class="cmp-accordion__title"> ${item.title} </span>
+                            <span class="cmp-accordion__icon" aria-hidden="true"> </span>
+                        </button>
+                    </h3>
+                    <div
+                        id="${item.id}-panel"
+                        class="cmp-accordion__panel cmp-accordion__panel--hidden"
+                        data-cmp-hook-accordion="panel"
+                        role="region"
+                        aria-labelledby="${item.id}-button"
+                    >
+                        <div data-sly-resource="${item.name @ decoration=true}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<sly data-sly-call="${clientlib.js @ categories='wknd-flights.accordion'}" />
+<div data-sly-test="${!properties.sectionHeading}" data-emptytext="Accordion" class="cq-placeholder"></div>
