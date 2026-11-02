@@ -94,7 +94,7 @@ public class TeaserModel {
     }
 
     public String getAltText() {
-        return altText;
+        return resolvedAltText;
     }
 
     public List<TeaserLink> getLinks() {
